@@ -11,13 +11,19 @@ module.exports = (sequelize) => {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
-    },
+      },
     name: {
       type: DataTypes.STRING(15), //El pokémon con nombre más largo a la fecha es 'Crabominable', con solo 12 caracteres
       allowNull: false,
       unique: true,
-      validate: { // agregar un -> notIn: [['nombres de los pokémons que voy a traer']]
+      validate: { 
         isAlpha: true,
+        notIn: [['bulbasaur', 'ivysaur', 'venusaur', 'charmander', 'charmeleon', 'charizard',
+              'squirtle', 'wartortle', 'blastoise', 'caterpie', 'metapod', 'butterfree', 'weedle',
+              'kakuna', 'beedrill', 'pidgey', 'pidgeotto', 'pidgeot', 'rattata', 'raticate', 'spearow',
+              'fearow', 'ekans', 'arbok', 'pikachu', 'raichu', 'sandshrew', 'sandslash', 'nidoran',
+              'nidoran-f', 'nidorina', 'nidoqueen', 'nidoran-m', 'nidorino', 'nidoking', 'clefairy',
+              'clefable', 'vulpix', 'ninetales', 'jigglypuff', 'wigglytuff']]
       }
     },
     hp: {
@@ -67,7 +73,11 @@ module.exports = (sequelize) => {
         max: 1500,
         min: 1
       }
-    }
+    },
+    image: {
+      type: DataTypes.STRING,
+      defaultValue: 'https://image.winudf.com/v2/image1/YWlyLmNvbS5zdW1tb2dhbWVzLnBva2VkZWdnYW5kaGF0Y2hpdF9pY29uXzE1NTUxMTA5NjlfMDc3/icon.png?w=&fakeurl=1'
+    },
   },
   {
   timestamps: false, //Para eliminar el createdAt/updatedAt de la tabla
