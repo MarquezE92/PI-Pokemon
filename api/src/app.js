@@ -7,6 +7,7 @@ const routes = require('./routes/index.js');
 require('./db.js');
 
 const server = express();
+server.use(express.json());
 
 server.name = 'API';
 
