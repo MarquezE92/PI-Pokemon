@@ -1,0 +1,226 @@
+body {
+	margin: 1%;
+	padding: 0;
+	background-image: url('../../images/fondoLandingPage.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+#button {
+	text-decoration: none;
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+button {
+	border: none;
+	border-radius: 6px;
+	color: white;
+	font-size: 10em;
+	font-family: 'Qwitcher Grypen', cursive;
+	background-color: transparent;
+	margin-left: 190%;
+	margin-top: -55%;
+	margin-bottom: 5%;
+	animation-name: start;
+	animation-duration: 3s;
+	animation-delay: 21s;
+	animation-iteration-count: infinite;
+}
+
+
+
+#pop1 {
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	width: 15%;
+	padding: 1%;
+	padding-left: 2%;
+	padding-right: 2%;
+	border-radius: 10rem;
+	visibility: hidden;
+	animation-name: pop1;
+	animation-delay: 1s;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+	display: inline-block;
+	
+	}
+
+#pop2 {
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	width: 15%;
+	padding: 1%;
+	padding-left: 2%;
+	padding-right: 2%;
+	border-radius: 10rem;
+	visibility: hidden;
+	animation-name: pop2;
+	animation-delay: 5s;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+	display: inline-block;
+	margin-left: 10%;
+	
+	}
+
+#pop3 {
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	width: 15%;
+	padding: 1%;
+	padding-left: 2%;
+	padding-right: 2%;
+	border-radius: 10rem;
+	position: relative;
+	animation-name: pop3;
+	animation-duration: 4s;
+	animation-delay: 9s;
+	animation-timing-function: ease-in-out;
+	margin-left: 15%;
+	visibility: hidden;
+}
+
+#pop4 {
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	width: 15%;
+	padding: 1%;
+	padding-left: 2%;
+	padding-right: 2%;
+	border-radius: 10rem;
+	position: relative;
+	animation-name: pop4;
+	animation-duration: 4s;
+	animation-delay: 13s;
+	animation-timing-function: ease-in-out;
+	display: inline-block;
+	visibility: hidden;
+}
+
+#pop5 {
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	width: 15%;
+	padding: 1%;
+	padding-left: 2%;
+	padding-right: 2%;
+	border-radius: 10rem;
+	position: relative;
+	animation-name: pop5;
+	animation-duration: 4s;
+	animation-delay: 17s;
+	animation-timing-function: ease-in-out;
+	display: block;
+	margin-left: 10%;
+	margin-top: 13%;
+	visibility: hidden;
+}
+
+@keyframes pop1 {
+0% {
+background-color: rgba(237, 14, 14, 0.2);
+visibility: visible;
+}
+50% {
+background-color: rgba(237, 14, 14, 0.76);
+visibility: visible;
+}
+100% {
+color: rgba(255, 255, 255, 0);
+background-color: rgba(237, 14, 14, 0);
+visibility: visible;
+}
+}
+
+@keyframes pop2 {
+0% {
+background-color: rgba(232, 237, 14, 0.2);
+visibility: visible;
+}
+50% {
+background-color: rgba(232, 237, 14, 0.76);
+visibility: visible;
+}
+100% {
+color: rgba(255, 255, 255, 0);
+background-color: rgba(232, 237, 14, 0);
+visibility: visible;
+}
+}
+
+@keyframes pop3 {
+0% {
+background-color: rgba(29, 182, 11, 0.2);
+visibility: visible;
+}
+50% {
+background-color: rgba(29, 182, 11, 0.76);
+visibility: visible;
+}
+100% {
+color: rgba(255, 255, 255, 0);
+background-color: rgba(29, 182, 11, 0);
+visibility: visible;
+}
+}
+
+@keyframes pop4 {
+0% {
+background-color: rgba(11, 26, 182, 0.2);
+visibility: visible;
+}
+50% {
+background-color: rgba(11, 26, 182, 0.76);
+visibility: visible;
+}
+100% {
+color: rgba(255, 255, 255, 0);
+background-color: rgba(11, 26, 182, 0);
+visibility: visible;
+}
+}
+
+@keyframes pop5 {
+0% {
+background-color: rgba(94, 11, 182, 0.2);
+visibility: visible;
+}
+50% {
+background-color: rgba(94, 11, 182, 0.76);
+visibility: visible;
+}
+100% {
+color: rgba(255, 255, 255, 0);
+background-color: rgba(94, 11, 182, 0);
+visibility: visible;
+}
+}
+
+@keyframes start {
+	0%{
+		color: #fcd703;
+		text-shadow: 0px 2px 8px #1a3fb8;
+	}
+	50% {
+		color: #fcd703;
+		text-shadow: 0px 2px 8px ghostwhite;
+	}
+	100%{
+		color: #fcd703;
+		text-shadow: 0px 2px 8px #1a3fb8;
+	}
+}
