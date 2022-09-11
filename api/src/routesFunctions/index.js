@@ -15,7 +15,8 @@ async function getApiFirstInfo() {
 				ID: p.data.id,
 				name: p.data.name,
 				image: p.data.sprites.other.home.front_default,
-				types: p.data.types.map((type)=> {return {name: type.type.name}})
+				types: p.data.types.map((type)=>{ return {'name': type.type.name}}),
+				attack: p.data.stats[1]['base_stat']
 			})
 		})
 		return pokemonsData;
@@ -25,7 +26,7 @@ async function getApiFirstInfo() {
 
 async function getPokemonsCreated() {
 	const pokemonsC = await Pokemon.findAll({
-				attributes: ['image', 'name', 'ID'],
+				attributes: ['image', 'name', 'ID', 'attack'],
 				include: {
 					model: Type,
 					attributes: ['name'],
@@ -37,11 +38,13 @@ async function getPokemonsCreated() {
 	return pokemonsC;
 };
 
+
+
 async function getAllpokemons() {
 	const pokemons40 = await getApiFirstInfo();
 	const pokeCreated = await getPokemonsCreated();
 	const allPokemons = pokemons40.concat(pokeCreated);
-
+	
 	return allPokemons;
 };
 
