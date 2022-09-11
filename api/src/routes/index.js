@@ -17,8 +17,8 @@ router.post('/pokemons', async (req, res)=> { 		//recibe types como un array de 
 	try {
 		const newPokemon = await Pokemon.create({name: name.toLowerCase(), hp, attack, defense, speed, height, weight, ID: ID++, image});
 		
-		newPokemon.addTypes(types);
-
+		types && newPokemon.addTypes(types) || newPokemon.addTypes([1])
+		
 		return res.send('A new Pokemon has been created');
 	} catch(e) {
 		res.status(400).send(e);
@@ -45,7 +45,7 @@ router.get('/pokemons', async (req, res)=>{
 		}
 });
 
- //debe traer imagen, nombre, tipo, ID, Estadísticas (vida, ataque, defensa, velocidad), Altura y peso
+ 
 router.get('/pokemons/:idPokemon', async (req, res)=>{ 
 	const { idPokemon } = req.params;
 	try {
@@ -73,9 +73,12 @@ router.get('/types', async (req, res)=> {
 		return res.json(types);
 	} else {
 		const llamadoApi = await axios.get('https://pokeapi.co/api/v2/type');
-		const typesOriginal= llamadoApi.data.results.map((type)=> {return {name: type.name}});
-				
+		const typesOriginal= llamadoApi.data.results.map((type)=> {return { name: type.name}});
+		console.log(typesOriginal)		
+		
 		Type.bulkCreate(typesOriginal);
+		
+		
 		return res.json(typesOriginal);
 	}
 	} catch(e) {
