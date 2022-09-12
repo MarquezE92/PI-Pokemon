@@ -1,0 +1,38 @@
+.navBarContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1%;
+	background-color: rgba(2, 0, 36, 0.7);
+}
+.navBarContainer:hover {
+	background-color: rgba(2, 0, 36, 1);
+}
+
+#pokeLogo {
+	width: 3.5%;
+	height: 3.5%;
+}
+
+.navLink {
+	text-decoration: none;
+	font-weight: bold;
+	padding: 0.7%;
+	padding-right: 1%;
+	padding-left: 1%;
+	border-radius: 8px;
+	background-color: rgba(1, 58, 103, 1);
+	color: rgba(0, 187, 253, 1);
+}
+
+.navLink:hover {
+	background-color: #FEDB39;
+	color: rgba(2, 0, 36, 1);
+}
+
+.active {
+	background-color: rgba(0, 187, 253, 1);
+	color: rgba(1, 58, 103, 1);
+}
+
