@@ -1,212 +1,207 @@
-body {
-	margin: 1%;
+* {
+	margin: 0;
 	padding: 0;
+}
+
+.containerLanding {
+	height: 625px;
+	width: 1366px;
 	background-image: url('../../images/fondoLandingPage.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-
+	background-attachment: fixed;
 }
+
 
 #button {
 	text-decoration: none;
 	height: 100%;
 	width: 100%;
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: repeat(5, 1fr);
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
-}
+	}
 
-button {
+#start {
 	border: none;
 	border-radius: 6px;
 	color: white;
 	font-size: 10em;
 	font-family: 'Qwitcher Grypen', cursive;
 	background-color: transparent;
-	margin-left: 190%;
-	margin-top: -55%;
-	margin-bottom: 5%;
 	animation-name: start;
-	animation-duration: 3s;
-	animation-delay: 21s;
+	animation-duration: 4s;
+	animation-delay: 11s;
 	animation-iteration-count: infinite;
+	position: relative;
+	display: inline-block;
+	top: 43%;
+	left: 14.3%;
 }
 
-
+#start:hover {
+	cursor: pointer;
+}
 
 #pop1 {
 	color: white;
 	font-weight: bold;
 	text-align: center;
-	width: 15%;
-	padding: 1%;
-	padding-left: 2%;
-	padding-right: 2%;
 	border-radius: 10rem;
-	visibility: hidden;
 	animation-name: pop1;
-	animation-delay: 1s;
-	animation-duration: 4s;
-	animation-timing-function: ease-in-out;
+	animation-duration: 2s;
+	animation-delay: 0;
+	animation-timing-function: ease-in;
 	display: inline-block;
-	
+	position: relative;
+	top: 20px;
+	left: 16px;
+	padding: 1%;
+	background-color: rgba(237, 14, 14, 0.76);
 	}
 
 #pop2 {
 	color: white;
 	font-weight: bold;
 	text-align: center;
-	width: 15%;
-	padding: 1%;
-	padding-left: 2%;
-	padding-right: 2%;
 	border-radius: 10rem;
-	visibility: hidden;
 	animation-name: pop2;
-	animation-delay: 5s;
 	animation-duration: 4s;
-	animation-timing-function: ease-in-out;
+	animation-delay: 0;
+	animation-timing-function: ease-in;
 	display: inline-block;
-	margin-left: 10%;
-	
+	position: relative;
+	top: 80px;
+	left: -270px;
+	padding: 1%;
+	background-color: rgba(252, 215, 3, 0.76);
 	}
 
 #pop3 {
 	color: white;
 	font-weight: bold;
 	text-align: center;
-	width: 15%;
-	padding: 1%;
-	padding-left: 2%;
-	padding-right: 2%;
 	border-radius: 10rem;
 	position: relative;
 	animation-name: pop3;
-	animation-duration: 4s;
-	animation-delay: 9s;
-	animation-timing-function: ease-in-out;
-	margin-left: 15%;
-	visibility: hidden;
+	animation-duration: 6s;
+	animation-delay: 0;
+	animation-timing-function: ease-in;
+	display: inline-block;
+	padding: 1%;
+	position: relative;
+	top: 140px;
+	left: -750px;
+	background-color: rgba(29, 182, 11, 0.76);
 }
 
 #pop4 {
 	color: white;
 	font-weight: bold;
 	text-align: center;
-	width: 15%;
-	padding: 1%;
-	padding-left: 2%;
-	padding-right: 2%;
 	border-radius: 10rem;
 	position: relative;
 	animation-name: pop4;
-	animation-duration: 4s;
-	animation-delay: 13s;
-	animation-timing-function: ease-in-out;
+	animation-duration: 8s;
+	animation-delay: 0;
+	animation-timing-function: ease-in;
 	display: inline-block;
-	visibility: hidden;
+	position: relative;
+	padding: 1%;
+	top: 200px;
+	left: -800px;
+	background-color: rgba(3, 129, 252, 0.76);
 }
 
 #pop5 {
 	color: white;
 	font-weight: bold;
 	text-align: center;
-	width: 15%;
-	padding: 1%;
-	padding-left: 2%;
-	padding-right: 2%;
 	border-radius: 10rem;
 	position: relative;
 	animation-name: pop5;
-	animation-duration: 4s;
-	animation-delay: 17s;
-	animation-timing-function: ease-in-out;
-	display: block;
-	margin-left: 10%;
-	margin-top: 13%;
-	visibility: hidden;
+	animation-duration: 10s;
+	animation-delay: 0;
+	animation-timing-function: ease-in;
+	display: inline-block;
+	padding: 1%;
+	position: relative;
+	top: 115px;
+	left: 15px;
+	background-color: rgba(94, 11, 182, 0.76);
 }
 
 @keyframes pop1 {
 0% {
-background-color: rgba(237, 14, 14, 0.2);
-visibility: visible;
+background-color: transparent;
+color: transparent;
 }
-50% {
-background-color: rgba(237, 14, 14, 0.76);
-visibility: visible;
+70% {
+color: rgba(255, 255, 255, 0.2);
+background-color: rgba(237, 14, 14, 0.2);
 }
 100% {
-color: rgba(255, 255, 255, 0);
-background-color: rgba(237, 14, 14, 0);
-visibility: visible;
+background-color: rgba(237, 14, 14, 0.76);
+box-shadow: 0px 2px 8px ghostwhite;
 }
 }
 
 @keyframes pop2 {
 0% {
-background-color: rgba(232, 237, 14, 0.2);
-visibility: visible;
+background-color: transparent;
+color: transparent;
 }
-50% {
-background-color: rgba(232, 237, 14, 0.76);
-visibility: visible;
+70% {
+color: rgba(255, 255, 255, 0.2);
+background-color: rgba(252, 215, 3, 0.2);
 }
 100% {
-color: rgba(255, 255, 255, 0);
-background-color: rgba(232, 237, 14, 0);
-visibility: visible;
+background-color: rgba(252, 215, 3, 0.76);
+box-shadow: 0px 2px 8px ghostwhite;
 }
 }
 
 @keyframes pop3 {
 0% {
-background-color: rgba(29, 182, 11, 0.2);
-visibility: visible;
+background-color: transparent;
+color: transparent;
 }
-50% {
-background-color: rgba(29, 182, 11, 0.76);
-visibility: visible;
+70% {
+color: rgba(255, 255, 255, 0.2);
+background-color: rgba(29, 182, 11, 0.2);
 }
 100% {
-color: rgba(255, 255, 255, 0);
-background-color: rgba(29, 182, 11, 0);
-visibility: visible;
+background-color: rgba(29, 182, 11, 0.76);
+box-shadow: 0px 2px 8px ghostwhite;
 }
 }
 
 @keyframes pop4 {
 0% {
-background-color: rgba(11, 26, 182, 0.2);
-visibility: visible;
+background-color: transparent;
+color: transparent;
 }
-50% {
-background-color: rgba(11, 26, 182, 0.76);
-visibility: visible;
+70% {
+color: rgba(255, 255, 255, 0.2);
+background-color: rgba(3, 129, 252, 0.2);
 }
 100% {
-color: rgba(255, 255, 255, 0);
-background-color: rgba(11, 26, 182, 0);
-visibility: visible;
+background-color: rgba(3, 129, 252, 0.76);
+box-shadow: 0px 2px 8px ghostwhite;
 }
 }
 
 @keyframes pop5 {
 0% {
+background-color: transparent;
+color: transparent;
+}
+70% {
+color: rgba(255, 255, 255, 0.2);
 background-color: rgba(94, 11, 182, 0.2);
 visibility: visible;
 }
-50% {
-background-color: rgba(94, 11, 182, 0.76);
-visibility: visible;
-}
 100% {
-color: rgba(255, 255, 255, 0);
-background-color: rgba(94, 11, 182, 0);
-visibility: visible;
+background-color: rgba(94, 11, 182, 0.76);
+box-shadow: 0px 2px 8px ghostwhite;
 }
 }
 
