@@ -1,5 +1,7 @@
 .containerHome {
 	background-color: #00256c;
+	min-height: 625px;;
+	
 }
 .loadingDiv {
 	width: 100%;
@@ -9,8 +11,12 @@
 	align-items: center;
 }
 
+#linkDetail {
+	text-decoration: none;
+}
 
-
-h1 {
-	color: #FEDB39;
+.cardsHomeDiv {
+	max-width: 1366px;;
+	
+	
 }
