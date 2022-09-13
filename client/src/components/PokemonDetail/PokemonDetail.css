@@ -1,0 +1,13 @@
+#detailContainer {
+	background-color: #00256c;
+	height: 625px;
+
+}
+
+.loadingDiv {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
