@@ -1,0 +1,20 @@
+#navPaginado {
+	display: flex;
+	justify-content: center;
+}
+
+.numeroPag {
+	color: rgba(2, 0, 36, 1);
+	text-shadow: rgba(0, 187, 253, 0.5) 1.95px 1.95px 2.6px;
+	background: transparent;
+	border: none;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 35px;
+	margin: 1%;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+.numeroPag:hover {
+	color: #FEDB39;
+}
