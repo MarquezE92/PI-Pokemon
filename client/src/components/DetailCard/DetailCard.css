@@ -1,0 +1,73 @@
+#cardContainerD {
+	background: rgba(255, 255, 255, 0.2);
+	width: 600px;
+	border-radius: 8px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+	box-shadow: rgba(0, 0, 0, 0.7) 0px 3px 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	transition: box-shadow .15s,transform .15s;
+	white-space: nowrap;
+  will-change: box-shadow,transform;
+}
+
+#cardContainerD:hover {
+  background: rgba(0, 187, 253, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 3px 8px, rgba(0, 0, 0, 0.7) 0px 3px 8px -3px, rgba(2, 0, 36, 0.7) 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+#number {
+	margin-left: auto;
+}
+
+#detailData {
+	display: flex;
+	flex-direction: row;
+}
+
+#detailDataFirst {
+	margin-left: 30px;
+	margin-right: 180px;
+}
+
+#detailDataSecond {
+	color: #FEDB39;
+	margin-top: auto;
+	margin-bottom: auto;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 15px;
+	text-shadow: rgba(2, 0, 36, 0.7) 1.95px 1.95px 2.6px;
+
+}
+
+#nameP {
+	color: #FEDB39;
+	margin-left: -25px;
+	margin-top: -10px;
+	margin-bottom: 20px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 40px;
+	text-shadow: rgba(2, 0, 36, 0.7) 1.95px 1.95px 2.6px;
+}
+
+#gifDetail {
+	height: 170px;
+	width: 170px;
+	padding: 8px;
+	background-color: wheat;
+	border-radius: 85px;
+	box-shadow: inset 3px 3px 6px rgb(2, 0, 36), inset -6px -6px 6px transparent;
+}
+
+#divTypesD {
+	width: 170;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
