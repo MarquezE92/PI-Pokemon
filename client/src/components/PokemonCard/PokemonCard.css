@@ -1,0 +1,270 @@
+#pokemonCardContainer {
+	background: rgba(255, 255, 255, 0.2);
+	width: 20%;
+	border-radius: 8px;
+	margin: 2%;
+	box-shadow: rgba(0, 0, 0, 0.7) 0px 3px 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	transition: box-shadow .15s,transform .15s;
+	white-space: nowrap;
+  	will-change: box-shadow,transform;
+}
+
+#pokemonCardContainer:hover {
+  background: rgba(0, 187, 253, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 3px 8px, rgba(0, 0, 0, 0.7) 0px 3px 8px -3px, rgba(2, 0, 36, 0.7) 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+#poke3D {
+	height: 250px;
+	width: 250px;
+
+}
+
+
+#pokeName {
+	color: #FEDB39;
+	padding-top: 3%;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 40px;
+	text-shadow: rgba(2, 0, 36, 0.7) 1.95px 1.95px 2.6px;
+	}
+
+#typesContainer {
+	margin: 4%;
+	display: flex;
+	flex-direction: row;
+	}
+
+#normal {
+	margin-right: 4px;
+	margin-left: 4px;
+	padding: 4px;
+	background-color: #ff7e53;
+	border-radius: 16px;
+	color: rgb(2, 0, 36);
+	text-align: center;
+	box-shadow: rgba(2, 0, 36, 0.7) 0px 5px 3px;	
+}
+
+#fighting {
+	margin-right: 4px;
+	margin-left: 4px;
+	padding: 4px;
+	background-color: #d50404;
+	border-radius: 16px;
+	color: rgb(2, 0, 36);
+	text-align: center;
+	box-shadow: rgba(2, 0, 36, 0.7) 0px 5px 3px;	
+}
+
+#flying {
+	margin-right: 4px;
+	margin-left: 4px;
+	padding: 4px;
+	background-color: #a76ce4;
+	border-radius: 16px;
+	color: rgb(2, 0, 36);
+	text-align: center;
+	box-shadow: rgba(2, 0, 36, 0.7) 0px 5px 3px;
+
+}
+
+#poison {
+	margin-right: 4px;
+	margin-left: 4px;
+	padding: 4px;
+	background-color: #b6219a;
+	border-radius: 16px;
+	color: rgb(2, 0, 36);
+	text-align: center;
+	box-shadow: rgba(2, 0, 36, 0.7) 0px 5px 3px;	
+}
+
+#ground {
+	margin-right: 4px;
+	margin-left: 4px;
+	padding: 4px;
+	background-color: #f2b186;
+	border-radius: 16px;
+	color: rgb(2, 0, 36);
+	text-align: center;
+	box-shadow: rgba(2, 0, 36, 0.7) 0px 5px 3px;	
+}
+
+#rock {
+	margin-right: 4px;
+	margin-left: 4px;
+	padding: 4px;
+	background-color: #aeaa4c;
+	border-radius: 16px;
+	color: rgb(2, 0, 36);
+	text-align: center;
+	box-shadow: rgba(2, 0, 36, 0.7) 0px 5px 3px;
+	min-width: 40px;	
+}
+
+#bug {
+	margin-right: 4px;
+	margin-left: 4px;
+	padding: 4px;
+	background-color: #a5f76b;
+	border-radius: 16px;
+	color: rgb(2, 0, 36);
+	text-align: center;
+	box-shadow: rgba(2, 0, 36, 0.7) 0px 5px 3px;
+	min-width: 40px;	
+}
+
+#ghost {
+	margin-right: 4px;
+	margin-left: 4px;
+	padding: 4px;
+	background-color: #a76ce4;
+	border-radius: 16px;
+	color: rgb(2, 0, 36);
+	text-align: center;
+	box-shadow: rgba(2, 0, 36, 0.7) 0px 5px 3px;	
+}
+
+#steel {
+	margin-right: 4px;
+	margin-left: 4px;
+	padding: 4px;
+	background-color: #e4daed;
+	border-radius: 16px;
+	color: rgb(2, 0, 36);
+	text-align: center;
+	box-shadow: rgba(2, 0, 36, 0.7) 0px 5px 3px;	
+}
+#fire {
+	margin-right: 4px;
+	margin-left: 4px;
+	padding: 4px;
+	background-color: #ff5a08;
+	border-radius: 16px;
+	color: rgb(2, 0, 36);
+	text-align: center;
+	box-shadow: rgba(2, 0, 36, 0.7) 0px 5px 3px;
+	min-width: 40px;	
+}
+
+#water {
+	margin-right: 4px;
+	margin-left: 4px;
+	padding: 4px;
+	background-color: #1792a9;
+	border-radius: 16px;
+	color: rgb(2, 0, 36);
+	text-align: center;
+	box-shadow: rgba(2, 0, 36, 0.7) 0px 5px 3px;
+	min-width: 40px;
+}
+
+#grass {
+	margin-right: 4px;
+	margin-left: 4px;
+	padding: 4px;
+	background-color: #59b34b;
+	border-radius: 16px;
+	color: rgb(2, 0, 36);
+	text-align: center;
+	box-shadow: rgba(2, 0, 36, 0.7) 0px 5px 3px;
+}
+
+#electric {
+	margin-right: 4px;
+	margin-left: 4px;
+	padding: 4px;
+	background-color: #ffea20;
+	border-radius: 16px;
+	color: rgb(2, 0, 36);
+	text-align: center;
+	box-shadow: rgba(2, 0, 36, 0.7) 0px 5px 3px;	
+}
+
+#psychic {
+	margin-right: 4px;
+	margin-left: 4px;
+	padding: 4px;
+	background-color: #e9005e;
+	border-radius: 16px;
+	color: rgb(2, 0, 36);
+	text-align: center;
+	box-shadow: rgba(2, 0, 36, 0.7) 0px 5px 3px;
+}
+
+#ice {
+	margin-right: 4px;
+	margin-left: 4px;
+	padding: 4px;
+	background-color: #b5ffff;
+	border-radius: 16px;
+	color: rgb(2, 0, 36);
+	text-align: center;
+	box-shadow: rgba(2, 0, 36, 0.7) 0px 5px 3px;
+	min-width: 40px;
+}
+
+#dragon {
+	margin-right: 4px;
+	margin-left: 4px;
+	padding: 4px;
+	background-color: #853280;
+	border-radius: 16px;
+	color: rgb(2, 0, 36);
+	text-align: center;
+	box-shadow: rgba(2, 0, 36, 0.7) 0px 5px 3px;
+}
+
+#dark {
+	margin-right: 4px;
+	margin-left: 4px;
+	padding: 4px;
+	background-color: #76312e;
+	border-radius: 16px;
+	color: rgb(2, 0, 36);
+	text-align: center;
+	box-shadow: rgba(2, 0, 36, 0.7) 0px 5px 3px;
+}
+
+#fairy {
+	margin-right: 4px;
+	margin-left: 4px;
+	padding: 4px;
+	background-color: #ff87ff;
+	border-radius: 16px;
+	color: rgb(2, 0, 36);
+	text-align: center;
+	box-shadow: rgba(2, 0, 36, 0.7) 0px 5px 3px;
+	min-width: 40px;
+}
+
+#unknown {
+	margin-right: 4px;
+	margin-left: 4px;
+	padding: 4px;
+	background-color: #005a65;
+	border-radius: 16px;
+	color: rgb(2, 0, 36);
+	text-align: center;
+	box-shadow: rgba(2, 0, 36, 0.7) 0px 5px 3px;
+}
+
+#shadow {
+	margin-right: 4px;
+	margin-left: 4px;
+	padding: 4px;
+	background-color: #848679;
+	border-radius: 16px;
+	color: rgb(2, 0, 36);
+	text-align: center;
+	box-shadow: rgba(2, 0, 36, 0.7) 0px 5px 3px;
+}
+
+
+
