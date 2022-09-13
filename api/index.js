@@ -18,9 +18,11 @@
 //                       `=---='
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const server = require('./src/app.js');
-const { conn } = require('./src/db.js');
+const { conn } = require('./src/db.js'); //conn es sequelize. Lo usaremos para sincronizar todas las tablas (models)
+                                         //en vez de sincronizar tabla por tabla.
 
 // Syncing all the models at once.
+    //force: true -> Si ya hay tabla, la tira y la vuelve a crear
 conn.sync({ force: true }).then(() => {
   server.listen(3001, () => {
     console.log('%s listening at 3001'); // eslint-disable-line no-console
