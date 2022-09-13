@@ -6,6 +6,7 @@ export default function PokemonCard({name, image, types}) {
 	let nameCap = name.split('');
 	nameCap.splice(0,1,cap).join('');
 	return(
+	<div id="inlineB">
 		<div id="pokemonCardContainer">
 			<h3 id="pokeName">{nameCap}</h3>
 			<img src={image} alt="Pokemon not found" id="poke3D"/>
@@ -13,5 +14,6 @@ export default function PokemonCard({name, image, types}) {
 			{types?.map(type=><h4 key={types.indexOf(type)} id={type.name}>{type.name}</h4>)}
 			</div>
 		</div>
+	</div>
 		)
 }

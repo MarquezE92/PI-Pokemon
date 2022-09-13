@@ -1,6 +1,11 @@
+#inlineB {
+	display: inline-block;
+	margin: 17px;
+}
+
 #pokemonCardContainer {
 	background: rgba(255, 255, 255, 0.2);
-	width: 20%;
+	width: 300px;
 	border-radius: 8px;
 	margin: 2%;
 	box-shadow: rgba(0, 0, 0, 0.7) 0px 3px 8px;
@@ -10,7 +15,7 @@
 	justify-content: space-around;
 	transition: box-shadow .15s,transform .15s;
 	white-space: nowrap;
-  	will-change: box-shadow,transform;
+  will-change: box-shadow,transform;
 }
 
 #pokemonCardContainer:hover {
