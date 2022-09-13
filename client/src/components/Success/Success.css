@@ -1,0 +1,54 @@
+#successPageContainer {
+	background-color: rgba(0, 187, 253, 1);
+	height: 625px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#successMessageContainer {
+	background-color: rgba(1, 58, 103, 1);
+	height: 300px;
+	border-radius: 20px;
+	box-shadow: rgba(1, 58, 103, 0.7) 3px 3px 5px;
+	padding: 20px;
+}
+
+#successTitle {
+	color: #FEDB39;
+	padding-top: 3%;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 40px;
+	text-shadow: rgba(2, 0, 36, 0.7) 1.95px 1.95px 2.6px;
+	text-align: center;
+	padding-bottom: 2%;
+}
+
+#successSubtitle {
+	color: #FEDB39;
+	padding-top: 3%;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 30px;
+	text-shadow: rgba(2, 0, 36, 0.7) 1.95px 1.95px 2.6px;
+	text-align: center;
+	padding-bottom: 2%;
+}
+
+#redirectButtonsContainer {
+	height: 100px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+.removeUnderline {
+	text-decoration: none;
+}
+
+#greatBtn {
+	padding: 15px;
+}
+
+#keepCreatingtBtn {
+	padding: 15px;
+}
