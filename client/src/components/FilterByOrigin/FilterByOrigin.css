@@ -1,0 +1,24 @@
+#filterByOriginContainer {
+	height: 65px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.filterByOriginButton {
+	color: rgba(1, 58, 103, 1);
+	background-color: rgba(0, 187, 253, 0.66);
+	box-shadow: rgba(2, 0, 36, 0.7) 0px 5px 3px;
+	border: none;
+	border-radius: 8px;
+	padding: 2px;
+	font-weight: bold;
+	font-size: 25px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+.filterByOriginButton:hover {
+	color: rgb(2, 0, 36);
+	background-color: #FEDB39;
+}
