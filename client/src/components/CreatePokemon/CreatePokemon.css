@@ -1,0 +1,335 @@
+#createPokemonContainer {
+	background-color: #00256c;
+	
+}
+
+#centerForm {
+	display: flex;
+	justify-content: center;
+}
+
+#formContainer {
+background: rgba(255, 255, 255, 0.1);
+margin-top: 60px;
+margin-bottom: 25px;
+padding: 40px;
+width: 800px;
+border-radius: 20px;
+box-shadow: 14px 14px 20px rgb(2, 0, 36), -7px -7px 20px #00256c;
+}
+
+#formTitle {
+	color: #FEDB39;
+	padding-top: 3%;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 40px;
+	text-shadow: rgba(2, 0, 36, 0.7) 1.95px 1.95px 2.6px;
+	text-align: center;
+	padding-bottom: 2%;
+
+}
+
+#prevSubmit {
+ 	color: #FEDB39;
+	padding: 2%;
+	border-radius: 10px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20px;
+ 	width: 250px;
+ 	background-color: rgba(2, 0, 36, 0.6);
+ 	text-shadow: rgba(2, 0, 36, 0.7) 1.95px 1.95px 2.6px;
+ 	box-shadow: rgba(0, 0, 0, 0.7) 0px 3px 8px, rgba(0, 0, 0, 0.7) 0px 3px 8px -3px, rgba(2, 0, 36, 0.7) 0 -3px 0 inset;
+	text-align: center;
+
+ }
+
+ .submitButtonForm {
+ 	color: #FEDB39;
+	padding: 2%;
+	border-radius: 10px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20px;
+	background-color: rgba(2, 0, 36, 0.6);
+ 	text-shadow: rgba(2, 0, 36, 0.7) 1.95px 1.95px 2.6px;
+ 	box-shadow: rgba(0, 0, 0, 0.7) 0px 3px 8px, rgba(0, 0, 0, 0.7) 0px 3px 8px -3px, rgba(2, 0, 36, 0.7) 0 -3px 0 inset;
+	text-align: center;
+ }
+
+ .submitButtonForm:hover {
+ 	color: rgb(2, 0, 36);
+ 	font-weight: bold;
+ 	text-shadow: none;
+ 	background-color: #FEDB39;;
+ } 
+
+ #buttonSubmitFormContainer {
+ 	display: flex;
+ 	justify-content: flex-end;
+ }
+
+.invalid::placeholder {
+  color: #b50000;
+}
+
+label {
+	color: #FEDB39;
+	font-size: 26px;
+	font-weight: bold;
+	text-shadow: rgba(2, 0, 36, 0.7) 1.95px 1.95px 2.6px;
+}
+
+#inputName {
+	background-color: rgba(255, 255, 255, 0.2);
+	border: none;
+	border-radius: 20px;
+	text-align: center;
+	font-weight: bold;
+	display: block;
+	font-size: 25px;
+	width: 100%;
+	margin-bottom: 4px;
+	box-shadow: inset 3px 3px 6px rgb(2, 0, 36), inset -6px -6px 6px transparent;
+}
+
+#inputHp {
+	background-color: rgba(255, 255, 255, 0.2);
+	border: none;
+	border-radius: 20px;
+	text-align: center;
+	font-weight: bold;
+	display: block;
+	font-size: 25px;
+	width: 100%;
+	margin-bottom: 4px;
+	box-shadow: inset 3px 3px 6px rgb(2, 0, 36), inset -6px -6px 6px transparent;
+}
+
+#inputAttack {
+	background-color: rgba(255, 255, 255, 0.2);
+	border: none;
+	border-radius: 20px;
+	text-align: center;
+	font-weight: bold;
+	display: block;
+	font-size: 25px;
+	width: 100%;
+	margin-bottom: 4px;
+	box-shadow: inset 3px 3px 6px rgb(2, 0, 36), inset -6px -6px 6px transparent;
+}
+
+#inputDefense {
+	background-color: rgba(255, 255, 255, 0.2);
+	border: none;
+	border-radius: 20px;
+	text-align: center;
+	font-weight: bold;
+	display: block;
+	font-size: 25px;
+	width: 100%;
+	margin-bottom: 4px;
+	box-shadow: inset 3px 3px 6px rgb(2, 0, 36), inset -6px -6px 6px transparent;
+}
+
+#inputSpeed {
+	background-color: rgba(255, 255, 255, 0.2);
+	border: none;
+	border-radius: 20px;
+	text-align: center;
+	font-weight: bold;
+	display: block;
+	font-size: 25px;
+	width: 100%;
+	margin-bottom: 4px;
+	box-shadow: inset 3px 3px 6px rgb(2, 0, 36), inset -6px -6px 6px transparent;
+}
+
+#inputHeight {
+	background-color: rgba(255, 255, 255, 0.2);
+	border: none;
+	border-radius: 20px;
+	text-align: center;
+	font-weight: bold;
+	display: block;
+	font-size: 25px;
+	width: 100%;
+	margin-bottom: 4px;
+	box-shadow: inset 3px 3px 6px rgb(2, 0, 36), inset -6px -6px 6px transparent;
+}
+
+#inputWeight {
+	background-color: rgba(255, 255, 255, 0.2);
+	border: none;
+	border-radius: 20px;
+	text-align: center;
+	font-weight: bold;
+	display: block;
+	font-size: 25px;
+	width: 100%;
+	margin-bottom: 4px;
+	box-shadow: inset 3px 3px 6px rgb(2, 0, 36), inset -6px -6px 6px transparent;
+}
+
+#inputImage {
+	background-color: rgba(255, 255, 255, 0.2);
+	border: none;
+	border-radius: 20px;
+	text-align: center;
+	font-weight: bold;
+	display: block;
+	font-size: 25px;
+	width: 100%;
+	margin-bottom: 4px;
+	box-shadow: inset 3px 3px 6px rgb(2, 0, 36), inset -6px -6px 6px transparent;
+}
+
+input::placeholder {
+  color: rgb(2, 0, 36);
+}
+ h3 {
+ 	font-size: 20px;
+ 	margin-left: 10px;
+ 	display: inline;
+ 	color: #b50000;
+ 	text-shadow: rgba(2, 0, 36, 0.7) 1.95px 1.95px 2.6px;
+ }
+
+ #labelnormal {
+ 	padding-left: 2px;
+ 	padding-right: 10px;
+ 	color: #ff7e53;
+ 	font-size: 20px;
+ }
+
+ #labelfighting {
+ 	padding-left: 2px;
+ 	padding-right: 10px;
+ 	color: #d50404;
+ 	font-size: 20px;
+ }
+
+  #labelflying {
+ 	padding-left: 2px;
+ 	padding-right: 10px;
+ 	color: #a76ce4;
+ 	font-size: 20px;
+ }
+
+  #labelpoison {
+ 	padding-left: 2px;
+ 	padding-right: 10px;
+ 	color: #b6219a;
+ 	font-size: 20px;
+ }
+
+  #labelground {
+ 	padding-left: 2px;
+ 	padding-right: 10px;
+ 	color: #f2b186;
+ 	font-size: 20px;
+ }
+
+  #labelrock {
+ 	padding-left: 2px;
+ 	padding-right: 10px;
+ 	color: #aeaa4c;
+ 	font-size: 20px;
+ }
+
+  #labelbug {
+ 	padding-left: 2px;
+ 	padding-right: 10px;
+ 	color: #a5f76b;
+ 	font-size: 20px;
+ }
+
+  #labelghost {
+ 	padding-left: 2px;
+ 	padding-right: 10px;
+ 	color: #a76ce4;
+ 	font-size: 20px;
+ }
+
+  #labelsteel {
+ 	padding-left: 2px;
+ 	padding-right: 10px;
+ 	color: #e4daed;
+ 	font-size: 20px;
+ }
+
+  #labelfire {
+ 	padding-left: 2px;
+ 	padding-right: 20px;
+ 	color: #ff5a08;
+ 	font-size: 20px;
+ }
+
+  #labelwater {
+ 	padding-left: 2px;
+ 	padding-right: 10px;
+ 	color: #1792a9;
+ 	font-size: 20px;
+ }
+
+  #labelgrass {
+ 	padding-left: 2px;
+ 	padding-right: 10px;
+ 	color: #59b34b;
+ 	font-size: 20px;
+ }
+
+  #labelelectric {
+ 	padding-left: 2px;
+ 	padding-right: 10px;
+ 	color: #ffea20;
+ 	font-size: 20px;
+ }
+
+ #labelpsychic {
+ 	padding-left: 2px;
+ 	padding-right: 10px;
+ 	color: #e9005e;
+ 	font-size: 20px;
+ }
+
+ #labelice {
+ 	padding-left: 2px;
+ 	padding-right: 10px;
+ 	color: #b5ffff;
+ 	font-size: 20px;
+ }
+
+ #labeldragon {
+ 	padding-left: 2px;
+ 	padding-right: 10px;
+ 	color: #853280;
+ 	font-size: 20px;
+ }
+
+ #labeldark {
+ 	padding-left: 2px;
+ 	padding-right: 10px;
+ 	color: #76312e;
+ 	font-size: 20px;
+ }
+
+ #labelfairy {
+ 	padding-left: 2px;
+ 	padding-right: 10px;
+ 	color: #ff87ff;
+ 	font-size: 20px;
+ }
+
+ #labelunknown {
+ 	padding-left: 2px;
+ 	padding-right: 70px;
+ 	color: #005a65;
+ 	font-size: 20px;
+ }
+
+ #labelshadow {
+ 	padding-left: 2px;
+ 	padding-right: 10px;
+ 	color: #848679;
+ 	font-size: 20px;
+ }
+
