@@ -3,7 +3,7 @@ import {GET_ALL_POKEMONS, FILTER_BY_TYPE, FILTER_BY_ORIGIN, SORT_BY_ALPHABET,
 import axios from 'axios';
 
 export const getAllPokemons = () => dispatch => {
-	return axios.get('http://localhost:3001/pokemons')
+	return axios.get('/pokemons')
 	.then(response=> response.data)
 	.then(data=> dispatch({type: GET_ALL_POKEMONS, payload: data}))
 };
