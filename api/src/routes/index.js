@@ -17,7 +17,7 @@ router.post('/pokemons', async (req, res)=> { 		//recibe types como un array de 
 	try {
 		const newPokemon = await Pokemon.create({name: name.toLowerCase(), hp, attack, defense, speed, height, weight, ID: ID++, image});
 		
-		types && newPokemon.addTypes(types) || newPokemon.addTypes([1])
+		types && types[0] && newPokemon.addTypes(types) || newPokemon.addTypes([1])
 		
 		return res.send('A new Pokemon has been created');
 	} catch(e) {
