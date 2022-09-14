@@ -24,7 +24,7 @@ const { conn } = require('./src/db.js'); //conn es sequelize. Lo usaremos para s
 // Syncing all the models at once.
     //force: true -> Si ya hay tabla, la tira y la vuelve a crear
 conn.sync({ force: true }).then(() => {
-  server.listen(3001, () => {
+  server.listen(process.env.PORT, () => {
     console.log('%s listening at 3001'); // eslint-disable-line no-console
   });
 });
