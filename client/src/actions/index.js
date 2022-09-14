@@ -9,13 +9,13 @@ export const getAllPokemons = () => dispatch => {
 };
 
 export const getTypes= ()=> dispatch=> {
-	return axios.get('http://localhost:3001/types')
+	return axios.get('/types')
 	.then(response=> response.data)
 	.then(data=> dispatch({type: GET_TYPES, payload: data}))
 };
 
 export const createPokemon= (infoPokemon)=> dispatch=> {
-	axios.post('http://localhost:3001/pokemons', infoPokemon);
+	axios.post('/pokemons', infoPokemon);
 	return {type: CREATE_POKEMON}
 };
 
@@ -36,14 +36,14 @@ export const sortByAttack= (order)=> {
 };
 
 export const getPokemon= (name)=> dispatch=> {
-	return axios.get(`http://localhost:3001/pokemons?name=${name}`)
+	return axios.get(`/pokemons?name=${name}`)
 	.then(response=> response.data)
 	.then(data=> dispatch({type: GET_POKEMON, payload: data}))
 
 };
 
 export const getPokemonDetail= (id)=> dispatch=> {
-	return axios.get(`http://localhost:3001/pokemons/${id}`)
+	return axios.get(`/pokemons/${id}`)
 	.then(response=> response.data)
 	.then(data=> dispatch({type: GET_POKEMON_DETAIL, payload: data}))
 };
