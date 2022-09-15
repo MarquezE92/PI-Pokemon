@@ -36,10 +36,11 @@ export const sortByAttack= (order)=> {
 };
 
 export const getPokemon= (name)=> dispatch=> {
-	return axios.get(`/pokemons?name=${name}`)
+		return axios.get(`/pokemons?name=${name}`)
 	.then(response=> response.data)
 	.then(data=> dispatch({type: GET_POKEMON, payload: data}))
-
+	.catch(error=> alert("We couldn't find your pokemon")) 
+	
 };
 
 export const getPokemonDetail= (id)=> dispatch=> {
