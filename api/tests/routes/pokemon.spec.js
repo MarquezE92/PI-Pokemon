@@ -1,24 +1,39 @@
-/* eslint-disable import/no-extraneous-dependencies */
-const { expect } = require('chai');
-const session = require('supertest-session');
+
+const request = require('supertest');
 const app = require('../../src/app.js');
-const { Pokemon, conn } = require('../../src/db.js');
+const { Type, conn } = require('../../src/db.js');
 
-const agent = session(app);
-const pokemon = {
-  name: 'Pikachu',
-};
+describe('Type routes', () => {
+  beforeAll(async()=> {
+    await conn.sync({force: true});
+  })
 
-describe('Pokemon routes', () => {
-  before(() => conn.authenticate()
-  .catch((err) => {
-    console.error('Unable to connect to the database:', err);
-  }));
-  beforeEach(() => Pokemon.sync({ force: true })
-    .then(() => Pokemon.create(pokemon)));
-  describe('GET /pokemons', () => {
-    it('should get 200', () =>
-      agent.get('/pokemons').expect(200)
-    );
+  describe('GET/types', ()=>{
+    it('should return status 200 and the list of all types', async()=>{
+      const res = await request(app).get('/types');
+      expect(res.statusCode).toBe(200);
+      expect(res.body).toEqual([
+        {"name":"normal"},
+        {"name":"fighting"},
+        {"name":"flying"},
+        {"name":"poison"},
+        {"name":"ground"},
+        {"name":"rock"},
+        {"name":"bug"},
+        {"name":"ghost"},
+        {"name":"steel"},
+        {"name":"fire"},
+        {"name":"water"},
+        {"name":"grass"},
+        {"name":"electric"},
+        {"name":"psychic"},
+        {"name":"ice"},
+        {"name":"dragon"},
+        {"name":"dark"},
+        {"name":"fairy"},
+        {"name":"unknown"},
+        {"name":"shadow"}
+        ])
+    })
   });
-});
+})
