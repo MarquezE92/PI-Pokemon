@@ -27,9 +27,9 @@ router.post('/pokemons', async (req, res)=> { 		//recibe types como un array de 
 
 router.get('/pokemons', async (req, res)=>{
 	const { name } = req.query;
-	const allPokemons = await getAllpokemons();
-
+	
 	try {
+		const allPokemons = await getAllpokemons();
 		if (name) {
 		const pokemon = allPokemons.filter((pokemon)=> pokemon.name.toLowerCase() === name.toLowerCase())
 				if (pokemon[0]) return res.json(pokemon);
@@ -42,10 +42,24 @@ router.get('/pokemons', async (req, res)=>{
 		}
 		} catch(e) {
 			res.status(400).send(e);
+			
 		}
 });
 
- 
+router.delete('/pokemons/delete/:idPokemon', async (req, res)=>{ 
+	const { idPokemon } = req.params;
+	try {
+		const deletedPokemon = await Pokemon.findByPk(idPokemon);
+		await deletedPokemon.destroy();
+
+		res.send("You've freed a pokemon");
+		
+	} catch(e) {
+		res.status(400).send(e);
+	}
+	
+});
+
 router.get('/pokemons/:idPokemon', async (req, res)=>{ 
 	const { idPokemon } = req.params;
 	try {
