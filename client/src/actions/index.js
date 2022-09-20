@@ -1,5 +1,6 @@
 import {GET_ALL_POKEMONS, FILTER_BY_TYPE, FILTER_BY_ORIGIN, SORT_BY_ALPHABET,
-	SORT_BY_ATTACK, CREATE_POKEMON, GET_POKEMON, GET_POKEMON_DETAIL, GET_TYPES} from './actionTypes';
+	SORT_BY_ATTACK, CREATE_POKEMON, GET_POKEMON, GET_POKEMON_DETAIL, GET_TYPES,
+	DELETE_POKEMON} from './actionTypes';
 import axios from 'axios';
 
 export const getAllPokemons = () => dispatch => {
@@ -47,4 +48,9 @@ export const getPokemonDetail= (id)=> dispatch=> {
 	return axios.get(`/pokemons/${id}`)
 	.then(response=> response.data)
 	.then(data=> dispatch({type: GET_POKEMON_DETAIL, payload: data}))
+};
+
+export const deletePokemon=(id)=> dispatch=> {
+	axios.delete(`/pokemons/delete/${id}`)
+	return {type: DELETE_POKEMON}
 };
