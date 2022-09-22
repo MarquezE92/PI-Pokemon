@@ -50,7 +50,7 @@ export const getPokemonDetail= (id)=> dispatch=> {
 	.then(data=> dispatch({type: GET_POKEMON_DETAIL, payload: data}))
 };
 
-export const deletePokemon=(id)=> dispatch=> {
-	axios.delete(`/pokemons/delete/${id}`)
-	return {type: DELETE_POKEMON}
+export const deletePokemon= (id)=> dispatch=> {
+	return axios.delete(`/pokemons/delete/${id}`)
+	.then(response=> dispatch({type: DELETE_POKEMON}))
 };
