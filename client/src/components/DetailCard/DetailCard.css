@@ -24,8 +24,22 @@
 
 #topDivDetail {
 	width: 100%;
+	position: relative;
 	display: flex;
 	justify-content: space-between;
+}
+.confirmDelete {
+	position: absolute;
+	top: -20px;
+	left: 30px;
+	font-size: 17px;
+	background-color: rgba(2, 0, 36, 0.7);
+	border-radius: 8px;
+	padding: 1%;
+	color: white;
+	text-shadow: rgb(2, 0, 36) 1.95px 1.95px 2.6px;
+	visibility: hidden;
+	transition: visibility .2s;
 }
 
 #number {
@@ -34,6 +48,7 @@
 }
 
 #deleteButton {
+	cursor: pointer;
 	width: 30px;
 	border-radius: 20px;
 	border: none;
@@ -44,8 +59,8 @@
  	box-shadow: rgba(2, 0, 36, 0.7) 1.95px 1.95px 2.6px;
 }
 
-#deleteButton:hover {
-	cursor: pointer;
+#deleteButton:hover .confirmDelete{
+	visibility: visible;
 }
 
 #detailData {

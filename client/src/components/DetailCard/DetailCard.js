@@ -22,7 +22,12 @@ export default function DetailCard({name, image, types, ID, hp, attack, defense,
 
 	  	{
 	  		(ID>40)?
-			(<button id="deleteButton" value={ID} onClick={handleDeleteBtn}>x</button>):
+			(<>
+				<button id="deleteButton" value={ID} onClick={handleDeleteBtn}>
+				x
+				<div className="confirmDelete">{'Are you sure you want to forget this pokemon?'}</div>
+				</button>
+			</>):
 			null
 		}
 		<h3 id="number">{`n° ${ID}`}</h3>
