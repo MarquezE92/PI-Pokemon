@@ -4,7 +4,7 @@
 
 <img height="150" src="./pokemon.png" />
 
-** First -deployed- project made as an evaluative instance at [Soy Henry](https://www.soyhenry.com/)'s web development bootcamp.**
+**First -deployed- project made as an evaluative instance at [Soy Henry](https://www.soyhenry.com/)'s web development bootcamp.**
 
 **This Single Page Application lets you search through the first generation first 40 pokemons through the use of an external API. You can sort them alphabetically, or by their attack; you can also filter them either by one type or by origin - meaning, those brought by the API or created with the use of a controlled form.**
 
