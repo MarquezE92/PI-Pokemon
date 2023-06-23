@@ -78,19 +78,19 @@ useEffect(()=>{
 		(allPokemons.length)? (
 						currentPokemons?.map(pokemon=>{
 							return(
-								<>
+								
 								<Link to={`/home/${pokemon.ID}`} id="linkDetail" key={pokemon?.ID}>
 								<PokemonCard name={pokemon.name} image={pokemon.image} types={pokemon.types} key={pokemon.ID} className="pokeCard"/>
 								</Link>
-								</>
+								
 								)
 							})
 						) :
-						(<>
+						(
 						  <div className="loadingDiv" >
 						  <img className="loadingImg" src="https://c.tenor.com/BINsHS7Uo-0AAAAi/temple-loader.gif" alt="Loading" />
 						  </div>
-						</>)
+						)
 		}
 		</div>
 		<Paginado
