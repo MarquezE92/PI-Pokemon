@@ -69,7 +69,7 @@ useEffect(()=>{
 		<div className="cardsHomeDiv" >
 		{
 		(allPokemons.length)? (
-						currentPokemons.map(pokemon=>{
+						currentPokemons?.map(pokemon=>{
 							return(
 								<>
 								<Link to={`/home/${pokemon.ID}`} id="linkDetail">
