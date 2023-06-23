@@ -28,6 +28,8 @@ useEffect(()=>{
 	const firstPokemon = lastPokemon - pokemonsPerPage;
 	const currentPokemons = allPokemons.slice(firstPokemon, lastPokemon);
 
+	console.log(currentPokemons)
+
 	function getAll() {
 		dispatch(getAllPokemons())
 	};
@@ -72,7 +74,7 @@ useEffect(()=>{
 						currentPokemons?.map(pokemon=>{
 							return(
 								<>
-								<Link to={`/home/${pokemon.ID}`} id="linkDetail">
+								<Link to={`/home/${pokemon.ID}`} id="linkDetail" key={pokemon?.ID}>
 								<PokemonCard name={pokemon.name} image={pokemon.image} types={pokemon.types} key={pokemon.ID} className="pokeCard"/>
 								</Link>
 								</>
