@@ -9,6 +9,7 @@ import Paginado from '../Paginado/Paginado';
 import FilterByType from '../FilterByType/FilterByType';
 import FilterByOrigin from '../FilterByOrigin/FilterByOrigin';
 import SortBy from '../SortBy/SortBy';
+import {backupDB} from '../../Utils';
 
 import {getAllPokemons, filterByType, filterByOrigin, sortByAlphabet, sortByAttack} from '../../actions';
 
@@ -20,7 +21,7 @@ useEffect(()=>{
 		dispatch(getAllPokemons())
 	},[]);
 
-	const allPokemons = useSelector(state=> state.pokemons);
+	const allPokemons = useSelector(state=> state.pokemons) || backupDB;
 	const [order, setOrder] = useState('');
 	const [currentPage, setCurrentPage] = useState(1);
 	const [pokemonsPerPage, setPokemonsPerPage] = useState(12);
