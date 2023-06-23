@@ -28,12 +28,9 @@ useEffect(()=>{
 	const [pokemonsPerPage, setPokemonsPerPage] = useState(12);
 	const lastPokemon = currentPage * pokemonsPerPage;
 	const firstPokemon = lastPokemon - pokemonsPerPage;
-	const currentPokemons = allPokemons?.slice(firstPokemon, lastPokemon);
+	const currentPokemons = Array.isArray(allPokemons) ? allPokemons.slice(firstPokemon, lastPokemon) : [];
 
-	console.log(pokemonsApi)
-	console.log(backupDB)
-	console.log(currentPokemons)
-	console.log(allPokemons)
+
 
 	function getAll() {
 		dispatch(getAllPokemons())
