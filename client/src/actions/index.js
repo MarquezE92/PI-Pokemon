@@ -3,6 +3,18 @@ import {GET_ALL_POKEMONS, FILTER_BY_TYPE, FILTER_BY_ORIGIN, SORT_BY_ALPHABET,
 	DELETE_POKEMON} from './actionTypes';
 import axios from 'axios';
 
+const api = axios.create({
+  baseURL: 'https://pokemon-app-estefania.herokuapp.com', // Reemplaza con la URL de tu servidor backend
+});
+
+// Configurar el interceptor para agregar las cabeceras CORS
+api.interceptors.request.use(config => {
+  config.headers['Access-Control-Allow-Origin'] = 'https://pi-pokemon-bice.vercel.app'; // Reemplaza con tu dominio frontend en Vercel
+  config.headers['Access-Control-Allow-Methods'] = 'GET, POST, OPTIONS, PUT, DELETE';
+  config.headers['Access-Control-Allow-Headers'] = 'Content-Type';
+  return config;
+});
+
 export const getAllPokemons = () => dispatch => {
 	return axios.get('/pokemons')
 	.then(response=> response.data)
