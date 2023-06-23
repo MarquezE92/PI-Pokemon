@@ -10,7 +10,8 @@ const api = axios.create({
 
 // Configurar el interceptor para agregar las cabeceras CORS
 api.interceptors.request.use(config => {
-  config.headers['Access-Control-Allow-Origin'] = 'https://pi-pokemon-bice.vercel.app'; // Reemplaza con tu dominio frontend en Vercel
+  config.headers['Access-Control-Allow-Origin'] = ['https://pi-pokemon-bice.vercel.app', 'http://localhost:3000']; // Reemplaza con tu dominio frontend en Vercel
+  config.headers['Access-Control-Allow-Credentials'] = 'true';
   config.headers['Access-Control-Allow-Methods'] = 'GET, POST, OPTIONS, PUT, DELETE';
   config.headers['Access-Control-Allow-Headers'] = 'Content-Type';
   return config;
