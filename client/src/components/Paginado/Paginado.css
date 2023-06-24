@@ -13,6 +13,7 @@
 	margin: 1%;
 	padding-left: 24px;
 	padding-right: 24px;
+	cursor: pointer;
 }
 
 .numeroPag:hover {

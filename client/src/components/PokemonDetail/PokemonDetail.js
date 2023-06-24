@@ -17,7 +17,7 @@ const PokemonDetail = (props)=> {
 	},[]);
 
 	const pokemonDetail= useSelector(state=> state.pokemonDetail);
-	console.log(pokemonDetail)
+
 
 	return(
 	 <div id="detailContainer">

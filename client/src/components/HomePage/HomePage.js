@@ -17,12 +17,12 @@ import {getAllPokemons, filterByType, filterByOrigin, sortByAlphabet, sortByAtta
 export default function HomePage() {
 	const dispatch = useDispatch();
 
-/* useEffect(()=>{
+useEffect(()=>{
 		dispatch(getAllPokemons())
-	},[]); */
+	},[]);
 
-	//const pokemonsApi = useSelector(state=> state.pokemons)
-	const allPokemons = backupDB;
+	const pokemonsApi = useSelector(state=> state.pokemons)
+	const allPokemons = pokemonsApi.length ? pokemonsApi : backupDB;
 	const [order, setOrder] = useState('');
 	const [currentPage, setCurrentPage] = useState(1);
 	const [pokemonsPerPage, setPokemonsPerPage] = useState(12);
@@ -30,7 +30,7 @@ export default function HomePage() {
 	const firstPokemon = lastPokemon - pokemonsPerPage;
 	const currentPokemons = allPokemons?.slice(firstPokemon, lastPokemon);
 
-	//console.log(pokemonsApi)
+	console.log(pokemonsApi)
 	console.log(backupDB)
 	console.log(currentPokemons)
 	console.log(allPokemons)

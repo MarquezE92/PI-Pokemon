@@ -1,6 +1,6 @@
 .containerHome {
 	background-color: #00256c;
-	min-height: 625px;;
+	min-height: 100vh;
 	
 }
 .loadingDiv {
@@ -16,7 +16,10 @@
 }
 
 .cardsHomeDiv {
-	max-width: 1366px;;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 	
 	
 }
