@@ -21,8 +21,8 @@ export default function HomePage() {
 		dispatch(getAllPokemons())
 	},[]); */
 
-	const pokemonsApi = useSelector(state=> state.pokemons)
-	const allPokemons = pokemonsApi.length ? pokemonsApi : backupDB;
+	//const pokemonsApi = useSelector(state=> state.pokemons)
+	const allPokemons = backupDB;
 	const [order, setOrder] = useState('');
 	const [currentPage, setCurrentPage] = useState(1);
 	const [pokemonsPerPage, setPokemonsPerPage] = useState(12);
