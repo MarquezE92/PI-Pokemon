@@ -17,9 +17,9 @@ import {getAllPokemons, filterByType, filterByOrigin, sortByAlphabet, sortByAtta
 export default function HomePage() {
 	const dispatch = useDispatch();
 
-useEffect(()=>{
+/* useEffect(()=>{
 		dispatch(getAllPokemons())
-	},[]);
+	},[]); */
 
 	const pokemonsApi = useSelector(state=> state.pokemons)
 	const allPokemons = pokemonsApi.length ? pokemonsApi : backupDB;
