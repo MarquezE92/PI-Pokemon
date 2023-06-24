@@ -30,7 +30,7 @@ export default function HomePage() {
 	const firstPokemon = lastPokemon - pokemonsPerPage;
 	const currentPokemons = allPokemons?.slice(firstPokemon, lastPokemon);
 
-	console.log(pokemonsApi)
+	//console.log(pokemonsApi)
 	console.log(backupDB)
 	console.log(currentPokemons)
 	console.log(allPokemons)
